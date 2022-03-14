@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Calculator Woohoo">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+	</head>
+<!-- Body -->
+	<body>
+		<h1>Calculator</h1>
+		<div class = "calcBody">
+			<div class = "display">
+				<div data-previous-input></div>
+				<div data-current-input></div>
+			</div>
+			<div class = "keypad">
+				<button data-clear class = "largeButton">ASC</button>
+				<button data-delete class = "smallButton">DEL</button>
+				<button data-operation class = "smallButton"><i class = "fas fa-divide"></i>÷</button>
+			</div>
+			<div class = "keypad">
+				<button data-number class = "smallButton">7</button>
+				<button data-number class = "smallButton">8</button>
+				<button data-number class = "smallButton">9</button>
+				<button data-operation class = "smallButton"><i class = "fas fa-x"></i>*</button>
+			</div>
+			<div class = "keypad">
+				<button data-number class = "smallButton">4</button>
+				<button data-number class = "smallButton">5</button>
+				<button data-number class = "smallButton">6</button>
+				<button data-operation class = "smallButton"><i class = "fas fa-minus"></i>-</button>
+			</div>
+			<div class = "keypad">
+				<button data-number class = "smallButton">1</button>
+				<button data-number class = "smallButton">2</button>
+				<button data-number class = "smallButton">3</button>
+				<button data-operation class = "smallButton"><i class = "fas fa-plus"></i>+</button>
+			</div>
+			<div class = "keypad">
+				<button data-number class = "smallButton">.</button>
+				<button data-number class = "smallButton">0</button>
+				<button data-equals class = "largeButton" id = "equalsButton"><i class = "fas fa-equals"></i>=</button>
+			</div>
+		</div>
+
+
+
+
+
+<!-- Scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
