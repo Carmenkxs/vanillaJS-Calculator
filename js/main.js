@@ -1,14 +1,14 @@
 //create class to contain all the elements we are displaying
 class Calculator {
-    contructor(prevTextElement, currentTextElement){
+    constructor(prevTextElement, currentTextElement) {
         this.prevTextElement = prevTextElement
         this.currentTextElement = currentTextElement
         //every time a new calculator is created, we want to clear all inputs
-        this.clear();
+        this.clear()
     }
 
     clear() {
-        this.currentOperand = ''
+        this.currentOperand = ''   
         this.previousOperand = ''
         this.operation = undefined
       }
@@ -16,11 +16,8 @@ class Calculator {
 
     appendNumber(number){
         this.currentOperand = number
-        console.log(number + 'hello');
+        console.log(this.currentOperand);
     }
-
-    //numerical operation
-
 
     delete(){
 
@@ -29,8 +26,7 @@ class Calculator {
 
     //compute and update display
     updateDisplay(){
-        // this.currentTextElement.innerText = this.currentOperand
-        console.log(this.currentTextElement.innerText);
+        this.currentTextElement.innerText = this.currentOperand
     }
 }
 
