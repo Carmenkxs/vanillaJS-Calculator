@@ -23,8 +23,14 @@
 /* BASE STYLES
 /*******************************************/
 
+h1 {
+  padding: 10vh 0 0 0;
+  text-align: center;
+  font-weight: 200;
+}
+
 body {
-  background-image: linear-gradient(90deg,#bdc3c7,#2c3e50);
+  background-image: linear-gradient(-90deg,rgb(116,107,128),rgb(160,215,255));
   color:white;
   min-height: 100vh;
   font-family: Roboto;
@@ -34,23 +40,25 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+.background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .calcBody {
-  min-height: 70vh;
   display: grid;
+  padding: 10px;
+  background-image: radial-gradient(circle at top right,rgb(52, 113, 156) 0%,rgb(14,3,48) 40%);
   grid-template-columns: repeat(4,60px);
   grid-template-rows: minmax(150px,auto) repeat(5,50px);
-  justify-content: center;
-  align-content: center;
+  border-radius: 20px;
 }
 
 .display {
   padding: 10px;
   grid-column: 1 / -1;
-  background-color: black;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -71,14 +79,27 @@ header {
 
 .calcBody > button {
   font-size: 1rem;
-  border: 1px solid black;
-  background-color: rgba(255, 255, 255, .75);
+  margin: 4px;
+  color: rgb(41,168,255);
+  border-radius: 12px;
+  background-color: rgb(48,49,54);
+  border: none;
+  
 }
 
-.largeButton {
+.calcBody > .operationButton {
+  font-size: 1.3rem;
+  background-color: rgb(0,93,178);
+}
+
+.calcBody > .largeButton {
   grid-column: span 2;
 }
 
+#equalsButton {
+  background-color: rgb(25,145,255);
+  color: white;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
